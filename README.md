@@ -4,8 +4,7 @@
 
 ## 📢 수업 안내
 
-본 Repository는 딥러닝 수업의 실습 코드와
-보충자료를 제공하기 위해 운영합니다.
+본 Repository는 딥러닝(이미란 교수) 수업의 실습 코드와 보충자료를 제공하기 위해 운영합니다.
 
 ---
 
@@ -15,7 +14,6 @@
 - Perceptron 개념
 - AND / OR Gate
 - XOR Problem
-- [📖 보충자료](./01_Perceptron/README.md)
 - [💻 Python Code](./01_Perceptron/perceptron.py)
 
 ### 02. Multi-Layer Perceptron
