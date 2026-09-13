@@ -14,6 +14,8 @@ Scikit-learn의 완성된 Perceptron 모델을 바로 사용하는 것이 아니
 
 Iris 데이터셋은 3종의 붓꽃으로 구성되어 있습니다.
 
+![Iris Dataset](./images/iris.png)
+
 | Class | 이름 |
 |---|---|
 | 0 | Setosa |
@@ -29,6 +31,8 @@ Iris 데이터셋은 3종의 붓꽃으로 구성되어 있습니다.
 | Petal Length | 꽃잎 길이 |
 | Petal Width | 꽃잎 너비 |
 
+![Iris Dataset Example](./images/iris_vector_ex.png)
+
 각 품종별 50개씩 총 **150개의 데이터**가 존재합니다.
 
 ---
@@ -42,10 +46,19 @@ from sklearn import datasets
 from sklearn.preprocessing import StandardScaler
 ```
 
-- `numpy` : 배열 및 수치 계산
-- `datasets` : Scikit-learn에서 제공하는 데이터셋
-- `StandardScaler` : 데이터 표준화
+- `numpy` : 배열 연산, 선형대수, 난수 생성, 수학 함수 등 수치 계산에 특화된 라이브러리
 
+   **공식 문서 링크:** [NumPy Documentation](https://numpy.org/doc/stable/)
+- `datasets` : Scikit-learn에서 머신러닝 학습 및 실습을 위해 제공하는 데이터셋 모듈
+
+   **공식 문서 링크:** [Scikit-learn/dataset](https://scikit-learn.org/stable/datasets.html)
+
+   **Scikit-learn Github:**[Scikit-learn/github](https://github.com/scikit-learn/scikit-learn)
+
+- `StandardScaler` : Scikit-learn의 데이터 전처리(Preprocessing) 기능 중 하나이며, 
+각 Feature의 평균과 데이터 범위를 일정한 기준으로 맞추기 위해 표준화(Standardization)를 수행함. 
+
+   **공식 문서 링크:** [Scikit-learn/StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
 ---
 
 ## 3. Iris 데이터 불러오기
