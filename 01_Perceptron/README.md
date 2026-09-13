@@ -62,6 +62,7 @@ from sklearn.preprocessing import StandardScaler
 ---
 
 ## 3. Iris 데이터 불러오기
+Scikit-learn에서 제공하는 `load_iris()` 함수를 이용하여 **Iris Dataset**을 불러옵니다.
 
 ```python
 iris = datasets.load_iris()
@@ -69,14 +70,52 @@ iris = datasets.load_iris()
 X_all = iris.data
 Y_all = iris.target
 ```
+- `datasets.load_iris()` : Scikit-learn에 내장된 Iris Dataset을 불러오는 함수
+- `iris.data` : 붓꽃의 4가지 특징(Feature) 값을 저장한 입력 데이터
+- `iris.target` : 각 붓꽃이 어떤 품종인지 나타내는 정답(Label) 데이터
+
+
 
 데이터셋의 구조는 다음 명령으로 확인할 수 있습니다.
 
+불러온 `iris`에는 입력 데이터뿐만 아니라 클래스 이름, Feature 이름, 데이터셋 설명 등 다양한 정보가 함께 저장되어 있습니다.
+
+```python
 ```python
 print(iris.keys())
-print(iris.target_names)
-print(iris.feature_names)
 ```
+
+실행 결과:
+
+```text
+dict_keys([
+    'data',
+    'target',
+    'frame',
+    'target_names',
+    'DESCR',
+    'feature_names',
+    'filename',
+    'data_module'
+])
+```
+
+주요 항목의 의미는 다음과 같습니다.
+
+| Key | 의미 |
+|---|---|
+| `data` | 4가지 Feature로 구성된 입력 데이터 |
+| `target` | 각 데이터의 정답 Label (0, 1, 2) |
+| `target_names` | Label에 해당하는 붓꽃 품종 이름 |
+| `feature_names` | 4가지 Feature의 이름 |
+| `DESCR` | Iris Dataset에 대한 상세 설명 |
+
+```python 
+    print(iris.keys())
+    print(iris.target_names)
+    print(iris.feature_names)
+```
+---
 
 ---
 
